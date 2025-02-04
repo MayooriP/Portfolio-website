@@ -3,154 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/MP-removebg-preview.png">
     <title>Mayoori P - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="theme-toggle">🌓</button>
-
-    <!-- Banner Section -->
-<header class="banner">
-    <div class="banner-content">
-        <h1 class="animated-text">Hello, I'm <span>Mayoori P</span></h1>
-        <p class="animated-text">Trainee Software Engineer | Full Stack | AWS Certified | Java | Spring Boot | React</p>
-        <p class="animated-text">📞 7012571803 | ✉️ mayoorimunnuraya11@gmail.com</p>
-        <div class="social-links">
-            <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://drive.google.com/file/d/1IRsMqz4brbKkQqWgcrKmP0Rq0God6-58/view?usp=sharing" download class="btn">Download Resume</a>
+<body class="dark-theme">
+    <!-- Header -->
+    <header>
+        <div class="rowmain">
+        <div class="logo">
+            <a href="#home">Mayoori Peradka</a>
         </div>
-    </div>
-</header>
-
-    <!-- Professional Summary -->
-    <section id="summary">
-        <h2>Professional Summary</h2>
-        <div class="box">
-            <ul>
-                <li>Skilled in Java, Spring Boot, React, AWS, and DevOps, with a passion for building scalable full-stack applications and cloud-based solutions.</li>
-                <li>Adept at working in collaborative team environments to deliver high-quality, efficient solutions.</li>
-                <li>Focused on continuous learning and adapting to new technologies to solve complex problems and drive innovation.</li>
+        <div class="hamburger" onclick="toggleMenu()">☰</div></div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1 class="animated-text1">Hello, I'm <span>Mayoori P</span></h1>
+    
+            <!-- Typing SVG Animation -->
+            <a href="#" class="shift-right">
+                <img src="https://readme-typing-svg.demolab.com?font=Smooch+Sans&weight=800&size=30&pause=1004&color=F7F6F6&width=850&lines=Trainee+Software+Engineer+%7C+Full+Stack+%7CAWS+Certified+%7C+Java+%7C+Spring+Boot+%7C+React" alt="Typing SVG" />
+            </a>            
+    
+            <p class="animated-text">📞 7012571803 | ✉️ mayoorimunnuraya11@gmail.com</p>
+    
+            <div class="social-links">
+                <a href="https://instagram.com/_._mayoori_._?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <span class="github-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+                </span>
+                </a>
+                <a href="https://github.com/MayooriP" target="_blank">
+                    <span class="github-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/mayoori-p-57153a26a/" target="_blank">
+                    <span class="github-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+                    </span>
+                </a>
+                <a href="https://twitter.com/mayooriNm" target="_blank">
+                    <span class="github-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" />
+                </span>
+                </a>
+                <a href="https://fb.com/MayooriNm" target="_blank">
+                    <span class="github-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" />
+                </span>
+                </a>
+            </div> 
         </div>
     </section>
 
-    <!-- Experience -->
-<section id="experience">
+
+    <div class="summary-box">
+        <h3>Professional Summary</h3>
+        <p>
+            I am a passionate and detail-oriented Trainee Software Engineer with expertise in Full Stack Development, Java, Spring Boot, React, and AWS. I have hands-on experience in building scalable web applications and a strong foundation in cloud computing. I am committed to continuous learning and delivering high-quality solutions.
+        </p>
+        <a href="https://drive.google.com/file/d/1IRsMqz4brbKkQqWgcrKmP0Rq0God6-58/view?usp=sharing" 
+           target="_blank" 
+           class="resume-btn">
+            View Resume
+        </a>
+    </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <br />
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-detail="Backend Development">
+                <h3>Java, Spring Boot, Hibernate, JDBC</h3>
+            </div>
+            <div class="skill-card" data-detail="Backend Development">
+                <h3>Python, Django, Flask, ML</h3>
+            </div>
+            <div class="skill-card" data-detail="Frontend Development">
+                <h4>React, HTML, CSS, Bootstrap, JavaScript </h4>
+            </div>
+            <div class="skill-card" data-detail="Databases">
+                <h3>MySQL, PostgreSQL </h3>
+            </div>
+            <div class="skill-card" data-detail="Cloud & DevOps">
+                <h4>AWS (Certified Solution Architect), GitHub </h4>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Experience Section -->
+   <section id="experience" class="experience-section">
     <h2>Experience</h2>
     <div class="timeline">
-        <!-- Timeline Line -->
-        <div class="timeline-line"></div>
-
-        <!-- Experience Item 1 -->
-        <div class="timeline-item left">
-            <div class="timeline-content box">
-                <h3>Trainee Software Engineer - InfoServices</h3>
-                <p class="timeline-date"><em>Sep 2024 – Present</em></p>
-                <ul>
-                    <li>Developing and maintaining backend services using Java, Spring Boot, and Hibernate, while integrating APIs with React.</li>
-                    <li>Working with AWS cloud services for deployment and implementing CI/CD pipelines for automation.</li>
-                </ul>
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+            <div class="timeline-date">Sep 2024 – Present</div>
+            <div class="timeline-content">
+                <h3>Trainee Software Engineer</h3>
+                <p class="company">Infoservices</p>
+                <p>Working on building scalable web applications using Java, Spring Boot, and React. Collaborating with cross-functional teams to deliver high-quality software solutions.</p>
             </div>
         </div>
 
-        <!-- Experience Item 2 -->
-        <div class="timeline-item right">
-            <div class="timeline-content box">
-                <h3>Intern - Varcon Pvt Ltd</h3>
-                <p class="timeline-date"><em>Jun 2023 – Jul 2023</em></p>
-                <ul>
-                    <li>Full stack development for a photography portfolio project, showcasing editing and creativity.</li>
-                </ul>
+         <!-- Timeline Item 3 -->
+         <div class="timeline-item">
+            <div class="timeline-date">Oct 2023 – Nov 2023</div>
+            <div class="timeline-content">
+                <h3>Intern</h3>
+                <p class="company">Bharat Intern</p>
+                <p>Developed, building and maintaining front-end websites using Html, Css, JavaScript</p>
             </div>
         </div>
 
-        <!-- Add more experience items as needed -->
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+            <div class="timeline-date">Aug 2023 – Sep 2023</div>
+            <div class="timeline-content">
+                <h3>Machine Learning Intern</h3>
+                <p class="company">Accolade Tech Solutions</p>
+                <p>Developed machine learning models for predictive analytics and worked on data preprocessing and model optimization.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date"> Jun 2023 – Jul 2023</div>
+            <div class="timeline-content">
+                <h3>Web Developer Intern</h3>
+                <p class="company">Varcon Pvt Ltd</p>
+                <p>Assisted in building and maintaining front-end features for client websites using HTML, CSS, and JavaScript, PHP.</p>
+            </div>
+        </div>
     </div>
 </section>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="box"><B>Backend Development:</B> Java, Spring Boot, Hibernate, JDBC</div>
-            <div class="box">Frontend Development: React, HTML, CSS, JavaScript</div>
-            <div class="box">Databases: MySQL, PostgreSQL</div>
-            <div class="box">Cloud & DevOps: AWS (Certified Solution Architect), GitHub</div>
-            <div class="box">Tools & Frameworks: Git, OpenAPI, Postman</div>
-            <div class="box">Programming Languages: Java, Python, PHP, SQL</div>
-            <div class="box">Machine Learning: Python, Django, Flask, Scikit-learn, TensorFlow, Data Classification</div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="box">
-                <h3>User Management System</h3>
-                <p>Using Java, Spring Boot, Hibernate, and MySQL, developed a management system to perform CRUD operations.</p>
+<!-- Certificates Section -->
+<section id="certificates" class="certificates-section">
+    <h2>Certificates</h2>
+    <div class="certificates-stack">
+        <!-- Certificate 1 -->
+        <div class="certificate-card">
+            <div class="certificate-content">
+                <h3>AWS Certified Solutions Architect</h3>
+                <p>Issued by Amazon Web Services (AWS). Validates expertise in designing and deploying scalable systems on AWS.</p>
+                <a href="https://drive.google.com/file/d/1zfmukUZMx9X6lYvYvSdeOvkpebxM95wk/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
             </div>
-            <div class="box">
-                <h3>Secure Vote</h3>
-                <p>ML project using Aadhaar-linked biometrics for global voting.</p>
+            <img src="./certificates/AWS Certified Solutions Architect - Associate certificate _page-0001.jpg" alt="AWS">
+        </div>
+
+
+        <!-- Certificate 4 -->
+        <div class="certificate-card">
+            <div class="certificate-content">
+                <h3>Machine Learning Specialization</h3>
+                <p>Issued by Great Learning. Covers machine learning algorithms, data preprocessing, and model evaluation.</p>
+                <a href="https://drive.google.com/file/d/19o8-Bik4cFPrOuQkC0MlWLa9ICYltJ8g/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
             </div>
-            <!-- Add more projects as needed -->
+            <img src="./certificates/Python for ML_page-0001.jpg" alt="ML">
         </div>
-    </section>
 
-    <!-- Certifications -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="box">
-            <ul>
-                <li>AWS Certified Solution Architect — AWS</li>
-                <li>Java Full Stack — Jspiders</li>
-                <li>Python for Machine Learning — Coursera</li>
-                <li>Cloud Foundation — Great Learning</li>
-                <li>How to Build Your Own Chat-Bot Using Python</li>
-            </ul>
+        <div class="certificate-card">
+            <div class="certificate-content">
+                <h3>Python for Data Science</h3>
+                <p>Issued by Great Learning. Data Cleaning, data preprocessing.</p>
+                <a href="https://drive.google.com/file/d/10mZIaKt2nFmHaLTig_Hwa_2BsYDEipfU/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
+            </div>
+            <img src="./certificates/Python for DataScienece_page-0001.jpg" alt="ML">
         </div>
-    </section>
 
-    <!-- Education -->
-    <section id="education">
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                    <div class="certificate-content">
+                        <h3>Java Full Stack</h3>
+                        <p>Issued by Jspiders. Covers advanced Java concepts, including Spring Boot, Hibernate, and JDBC.</p>
+                        <a href="https://drive.google.com/file/d/1rhej91B3qkd82dw6kDQjw9FndjqDLBe3/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
+                    </div>
+                    <img src="./certificates/Mayoori_P Java Full stack.png" alt="Java Full Stack">
+                </div>
+
+        <div class="certificate-card">
+            <div class="certificate-content">
+                <h3>Cloud Foundation</h3>
+                <p>Issued by Great Learning. Covers computer Networks, caching, Serveres.</p>
+                <a href="https://drive.google.com/file/d/1r9ASCU3s3AlO3Tvf1F0xwg9XJAguY2eq/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
+            </div>
+            <img src="./certificates/Cloud Foundation_page-0001.jpg" alt="ML">
+        </div>
+
+        <div class="certificate-card">
+            <div class="certificate-content">
+                <h3>Building Own ChatBot</h3>
+                <p>Issued by Great Learning. Covers machine learning Training on Data for AI Chatbot.</p>
+                <a href="https://drive.google.com/file/d/1Et9qS5vo_tB1dNdrTPbEZ_f-UItpelf4/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
+            </div>
+            <img src="./certificates/How to Build Your Own Chat Boot_page-0001.jpg" alt="ML">
+        </div>
+
+         <!-- Certificate 3 -->
+         <div class="certificate-card">
+            <div class="certificate-content">
+                <h3>Programming for EveryBody</h3>
+                <p>Issued by Coursera. Focuses on building responsive and dynamic user interfaces and Python ML Learnings.</p>
+                <a href="https://drive.google.com/file/d/1Pq22Jyatn87ctWjzXEwQblZo3sOGj7j3/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a>
+            </div>
+            <img src="./certificates/Python for Everybody(Coursera) (1)_page-0001.jpg" alt="Python for every Body">
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <br />
+    <div class="cards">
+      <a href="https://github.com/MayooriP/Bloodbank-Management-System.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/bloodbank.png" alt="Blood bank management system">
+          <div class="card-label">Blood bank management system</div>
+        </div>
+      </a>
+  
+      <a href="https://github.com/MayooriP/Bloodbank-Management-System.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/job1.png" alt="Job Haunt">
+          <div class="card-label">Job Haunt</div>        </div>
+      </a>
+  
+      <a href="https://github.com/MayooriP/User-Management-system.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/Userman1.png" alt="User management system">
+          <div class="card-label">User management system</div>
+        
+        </div>
+      </a>
+  
+      <a href="https://github.com/MayooriP/Send-Mail.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/Send mail.jpeg" alt="send mail">
+          <div class="card-label">Send mail</div>
+        
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/photography-portfolio.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/photography portfolio.jpeg" alt="Photography portfolio">
+          <div class="card-label">Photography portfolio</div>
+        
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/Netflix_Homepage_clone.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/Netflix cone.jpeg" alt="Netflix clone">
+          <div class="card-label">Netflix clone</div>
+        
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/Temp_converter.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/Temp converter.jpeg" alt="temp converter">
+          <div class="card-label">temp converter</div>
+        
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/Placement-management-system.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/cyberbullying.jpeg" alt="Cyber Bullying">
+          <div class="card-label">Cyber Bullying</div>
+        
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/quiz-main.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/quiz app.jpeg" alt="Quiz app">
+          <div class="card-label">Quiz app</div>
+         
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/Placement-management-system.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/placement2.png" alt="placement management system">
+          <div class="card-label">placement management system</div>
+          
+        </div>
+      </a>
+
+      <a href="https://github.com/MayooriP/Secure-Vote-Aadhar-linked-Biometrics.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/Secure3.jpeg" alt="Secure Vote">
+          <div class="card-label">Secure Vote</div>
+          
+        </div>
+      </a>
+      <a href="https://github.com/MayooriP/LinkedIn-ai-Reply.git" target="_blank" class="card">
+        <div class="card-face">
+          <img src="./images/projects/Linkedin.jpeg" alt="LinkedIn AI Reply">
+          <div class="card-label">LinkedIn AI Reply</div>
+          
+        </div>
+      </a>
+
+    </div>
+</section>
+  
+
+     <!-- Education Section -->
+     <section id="education">
         <h2>Education</h2>
-        <div class="box">
-            <h3>A J Institute of Engineering and Technology, Mangalore, Karnataka</h3>
-            <p>B.E. in Information Science | Aug 2020 – Jul 2024</p>
-            <p>Cumulative GPA: 7.4/10.0</p>
-        </div>
-        <div class="box">
-            <h3>B.A.R.H.S.S, Bovikana, Kerala, India</h3>
-            <p>Higher Secondary Education | Jun 2018 – May 2020</p>
-        </div>
-        <div class="box">
-            <h3>Jaimatha Senior Secondary School, Kasaragod, Kerala, India</h3>
-            <p>Secondary Education | Jun 2016 – May 2018</p>
-        </div>
-    </section>
+        <div class="education-container">
+            <div class="education-grid">
+                <div class="box">
+                    <img src="images/education/Btech.jpeg" alt="Btech">
+                    <div class="edu-details">
+                        <h3>A J Institute of Engineering and Technology</h3>
+                        <p>B.E. in Information Science | 2020 – 2024</p>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Achievements -->
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <div class="box">
-            <ul>
-                <li>Represented Visvesvaraya Technological University in All India University Taekwondo Championship (Mar 2022, Jan 2024).</li>
-                <li>Represented AJIET in South Zone Taekwondo Championship (2023).</li>
-                <li>Won 2nd Place at IDEATHON - Solving Realistic Problems in & Around Mangaluru, Idea Conclave for Better Mangaluru.</li>
-            </ul>
+            <div class="education-grid">
+                <div class="box">
+                    <img src="images/education/Pu.jpg" alt="PU">
+                    <div class="edu-details">
+                        <h3>B.A.R.H.S.S Bovikan</h3>
+                        <p>Completed PU board | 2018 – 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-grid">
+                <div class="box">
+                    <img src="images/education/SSLC.jpg" alt="SSLC">
+                    <div class="edu-details">
+                        <h3>Jaimatha Senior Secondary School</h3>
+                        <p>Completed 10th CBSE board | 2008 – 2018</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Mayoori P. All rights reserved.</p>
+        <p>&copy; 2025 Mayoori P. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
