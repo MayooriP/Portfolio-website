@@ -226,7 +226,43 @@ header nav ul li a:hover::after {
         display: flex; /* Show menu when active */
     }
 }
-/* Social Media Icons */
+@media (max-width: 375px) {
+    header {
+        display: flex; /* Make header a flex container */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .rowmain {
+        display: flex; /* Ensure rowmain is a flex container */
+        justify-content: space-between; /* Space between logo and hamburger */
+        width: 100%; /* Full width */
+    }
+
+    nav {
+        margin-left: auto; /* Move nav to the right */
+        width: 100%; /* Full width for nav */
+    }
+
+    .hamburger {
+         /* Show hamburger menu */
+        margin-bottom: 10px; /* Space below the hamburger */
+        margin-left: auto; /* Align hamburger to the right */
+    }
+
+    header nav ul {
+        display: none; 
+        flex-direction: column; 
+        gap: 10px; 
+        width: 100%; 
+        align-items: flex-end; 
+    }
+
+    header nav ul.nav-active {
+        display: flex; 
+    }
+}
+
 .social-links a {
     margin: 0 10px;
 }
@@ -240,33 +276,33 @@ header nav ul li a:hover::after {
 .social-links a:hover img {
     transform: scale(1.1);
 }
-/* GitHub Icon with White Background */
+
 .github-icon {
-    background-color: white; /* White background */
-    padding: 5px; /* Add some padding */
-    border-radius: 50%; /* Make it circular */
-    display: inline-flex; /* Center the icon */
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 50%; 
+    display: inline-flex; 
     align-items: center;
     justify-content: center;
 }
 
 .github-icon img {
-    width: 15px; /* Adjust icon size */
+    width: 15px; 
     height: 15px;
 }
-/* Skills Section */
+
 #skills {
     text-align: center;
     padding: 40px;
 }
 
-/* Skills Section */
+
 #skills {
     padding: 40px;
     text-align: center;
 }
 
-/* Grid for the skill cards */
+
 .skills-grid {
     display: flex;
     justify-content: center;
@@ -274,7 +310,6 @@ header nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 
-/* Skill Card - Container */
 .skill-card {
     width: 250px;
     height: 200px;
@@ -282,10 +317,10 @@ header nav ul li a:hover::after {
                 rgba(240, 46, 170, 0.3) 10px 10px,
                 rgba(240, 46, 170, 0.2) 15px 15px;
     box-shadow: 
-    0 4px 10px rgba(52, 152, 219, 0.5), /* Blue shadow */
-    0 0 15px rgba(52, 152, 219, 0.6),  /* Lighter blue glow */
-    0 4px 10px rgba(0, 0, 0, 0.1);     /* Subtle black shadow for depth */
-color: #ffffff; /* White text */
+    0 4px 10px rgba(52, 152, 219, 0.5), 
+    0 0 15px rgba(52, 152, 219, 0.6),  
+    0 4px 10px rgba(0, 0, 0, 0.1);
+color: #ffffff; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,15 +344,13 @@ color: #ffffff; /* White text */
     margin: 0;
 }
 
-/* Hover Effect - Floating and Shadow */
 .skill-card:hover {
-    transform: translateY(-10px); /* Floating effect */
+    transform: translateY(-10px); 
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
                 rgba(240, 46, 170, 0.3) 10px 10px,
                 rgba(240, 46, 170, 0.2) 15px 15px;
 }
 
-/* Optional: Additional styling for the hover details (like tooltips) */
 .skill-card::after {
     content: attr(data-detail);
     position: absolute;
@@ -338,9 +371,6 @@ color: #ffffff; /* White text */
     visibility: visible;
 }
 
-
-
-/* Professional Summary Box */
 .summary-box {
     background-color: var(--box-bg);
     padding: 30px;
@@ -412,26 +442,17 @@ color: #ffffff; /* White text */
     color: #91f0ec;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .resume-btn {
         padding: 0 40px;
     }
 }
 
-/* Progress Bar */
-.progress-bar {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 5px;
-}
 
 .experience-section {
     text-align: center;
 }
 
-
-/* Timeline Section */
 .timeline {
     position: relative;
     max-width: 900px;
@@ -439,18 +460,17 @@ color: #ffffff; /* White text */
     padding: 40px 0;
 }
 
-/* Vertical Line */
 .timeline::before {
     content: '';
     position: absolute;
     left: 50%;
     width: 2px;
     height: 100%;
-    background-color: var(--primary-color); /* Blue line */
+    background-color: var(--primary-color); 
     transform: translateX(-50%);
 }
 
-/* Timeline Item */
+
 .timeline-item {
     padding: 20px 40px;
     position: relative;
@@ -458,7 +478,6 @@ color: #ffffff; /* White text */
     transition: transform 0.3s ease-in-out;
 }
 
-/* Alternate Positioning */
 .timeline-item:nth-child(odd) {
     left: -80px;
     text-align: right;
@@ -469,22 +488,20 @@ color: #ffffff; /* White text */
     text-align: left;
 }
 
-/* 3D Hover Effect */
 .timeline-item:hover {
     transform: scale(1.05) translateY(-5px);
 }
 
-/* Timeline Date */
 .timeline-date {
     font-size: 18px;
     font-weight: bold;
-    color: var(--primary-color); /* Blue color */
+    color: var(--primary-color); 
     margin-bottom: 10px;
 }
 
-/* Timeline Content */
+
 .timeline-content {
-    background-color: var(--box-bg); /* Dark background */
+    background-color: var(--box-bg); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 
@@ -497,7 +514,6 @@ color: #ffffff; /* White text */
     transition: all 0.3s ease;
 }
 
-/* Hover Effect */
 .timeline-content:hover {
     box-shadow: 
         rgba(240, 46, 170, 0.4) -5px 5px,
@@ -507,7 +523,7 @@ color: #ffffff; /* White text */
         rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
-/* Arrow for Timeline Content */
+
 .timeline-content::before {
     content: '';
     position: absolute;
@@ -517,44 +533,44 @@ color: #ffffff; /* White text */
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid var(--box-bg); /* Dark arrow */
+    border-left: 10px solid var(--box-bg); 
 }
 
 .timeline-item:nth-child(even) .timeline-content::before {
     left: -12px;
     border-left: none;
-    border-right: 10px solid var(--box-bg); /* Dark arrow */
+    border-right: 10px solid var(--box-bg); 
 }
 
-/* Pink Dot on Vertical Line Aligned to Arrow */
+
 .timeline-dot {
     position: absolute;
     left: 50%;
     width: 14px;
     height: 14px;
-    background-color: #ff3ea5; /* Pink Color */
+    background-color: #ff3ea5; 
     border-radius: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(255, 0, 150, 0.8), 0 0 20px rgba(255, 0, 150, 0.6);
 }
 
-/* Adjust dot position to match arrow tip */
+
 .timeline-item:nth-child(odd) .timeline-dot {
-    top: 30px; /* Adjust dot position */
+    top: 30px; 
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
     top: 30px;
 }
 
-/* Company Name */
+
 .timeline-content .company {
     font-size: 16px;
     color: #777;
     margin-bottom: 10px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .timeline::before {
         left: 20px;
@@ -583,10 +599,6 @@ color: #ffffff; /* White text */
         left: 20px;
     }
 }
-
-
-/* Certificates Section */
-/* 3D Effect for Certificate Cards with Pink Glow on All Sides */
 .certificate-card {
     position: sticky;
     top: 100px;
@@ -606,7 +618,6 @@ color: #ffffff; /* White text */
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-/* Hover Effect - Enhances 3D Look */
 .certificate-card:hover {
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05);
     box-shadow: 
@@ -633,13 +644,11 @@ color: #ffffff; /* White text */
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    /* Remove min-height if you no longer need stacking based on height */
   }
   
-  /* Certificate Card - Clear, without blur */
   .certificate-card {
     position: sticky;
-    top: 100px; /* Adjust for stacking offset */
+    top: 100px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -649,8 +658,8 @@ color: #ffffff; /* White text */
     border-radius: 20px;
     box-shadow: var(--box-shadow);
     margin: 20px 0;
-    opacity: 1;       /* Fully visible */
-    transform: scale(1); /* No scaling */
+    opacity: 1;       
+    transform: scale(1); 
     transition: all 0.4s ease;
   }
   
@@ -661,8 +670,6 @@ color: #ffffff; /* White text */
     border-radius: 10px;
 }
 
-  
-  /* Certificate Content */
   .certificate-content {
     width: 45%;
     text-align: left;
@@ -680,7 +687,7 @@ color: #ffffff; /* White text */
     margin-bottom: 30px;
   }
   
-  /* Certificate Link Button */
+
   .certificate-link {
     display: inline-block;
     padding: 12px 24px;
@@ -701,7 +708,7 @@ color: #ffffff; /* White text */
     color: #fff;
     margin-bottom: 20px;
   }  
-/* New Card Section Styles */
+
 #cards {
     background: linear-gradient(135deg, #666, #777);
     border: 10px solid #0add2a;
@@ -746,14 +753,14 @@ color: #ffffff; /* White text */
   .card-face img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures full coverage */
+    object-fit: cover; 
 }
 
 .card-label {
     position: absolute;
     bottom: 0;
     width: 90%;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); 
     color: white;
     text-align: center;
     font-size: 10px;
@@ -835,7 +842,7 @@ color: #ffffff; /* White text */
       transform: scale(1.15);
     }
   }
-/* Pink Glow Effect */
+
 .cards::before {
     content: '';
     position: absolute;
@@ -852,7 +859,7 @@ color: #ffffff; /* White text */
     opacity: 1;
 }
 
-/* Education Section */
+
 #education {
     text-align: center;
     margin-top: 9px;
@@ -865,7 +872,6 @@ h2 {
     color: #ff69b4;
 }
 
-/* Education Grid */
 .education-container {
     display: flex;
     flex-direction: column;
@@ -877,7 +883,6 @@ h2 {
     justify-content: center;
 }
 
-/* Box (Each Education Entry) */
 .box {
     display: flex;
     align-items: center;
@@ -888,16 +893,14 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     max-width: 700px;
-    margin-left: 100px; /* Add Left Margin */
+   
 }
 
-/* Hover Effect */
 .box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
 }
 
-/* Image Styling */
 .box img {
     width: 80px;
     height: 80px;
@@ -906,7 +909,7 @@ h2 {
     object-fit: cover;
 }
 
-/* Education Details */
+
 .edu-details {
     text-align: left;
 }
@@ -923,8 +926,7 @@ p {
     color: #d1d1d1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 430px) {
     .certificate-card img{
         width: 350px;
         height: 250px;
@@ -954,6 +956,132 @@ p {
         font-size: 20px;
         margin-left: 90px;
       }
+      .timeline {
+        position: relative;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 475px) {
+    .shift-right {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .shift-right img {
+        transform: scale(0.47); 
+        transform-origin: center; 
+    }
+
+.banner-content {
+    width: 100%;
+}
+
+.animated-text1 {
+    font-size: 1.5rem;
+}
+.animated-text {
+    font-size: 9px;
+}
+
+.summary-box {
+    max-width: 50%;
+}
+.resume-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+.social-links img {
+    width: 10px;
+    height: 10px;
+    max-width: 100%;
+}
+
+.timeline::before {
+    left: 20px;
+}
+
+.timeline-item {
+    width: 70%;
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even) {
+    left: 0;
+    text-align: left;
+}
+
+.timeline-content::before {
+    left: -20px;
+    border-left: none;
+    border-right: 10px solid var(--box-bg);
+}
+
+.certificate-card {
+    flex-direction: column; 
+    padding: 10px;
+}
+
+.certificate-content {
+    width: 100%; 
+    text-align: center; 
+    order: -3; 
+}
+.certificate-content h3 {
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.certificate-content p {
+    font-size: 10px; 
+}
+
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+}
+.card {
+    width: 60px; 
+    height: 160px; 
+}
+.cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.card-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-label {
+    font-size: 7px; 
+}
+
+.card:hover .card-face {
+    transform: scale(1.3); 
+}
+
+.education-grid {
+    max-width: 100%;
+    margin-left: 6% !important;
+    margin-right: 6%;
+}
+.edu-details h3 {
+    font-size: 11px; 
+}
+.edu-details p {
+    font-size: 8px; 
+}
+
 }
 
 
